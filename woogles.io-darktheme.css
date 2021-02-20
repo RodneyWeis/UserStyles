@@ -1,0 +1,53 @@
+/* ==UserStyle==
+@name           Woogles Dark Theme Highlighter
+@namespace      github.com/RodneyWeis/UserStyles
+@version        1.0.0
+@description    Highlight last move, modify font and tile styles
+@author         Rodney Weis
+==/UserStyle== */
+
+@-moz-document domain("woogles.io") {
+
+.last-played > .rune,
+.last-played > .point-value {
+    color: #baadbb !important;
+}
+
+.tile {
+    border: 1px solid black !important;
+    border-collapse: collapse !important;
+    border-radius: 4px !important;
+}
+
+.last-played {
+    background-color: #643e69 !important;
+    border: 1px solid #baadbb !important;
+    border-collapse:  collapse !important;
+}
+
+.last-played.blank > .rune {
+    background-color: #baadbb !important;
+    color: #643869 !important;
+}
+
+.rune {
+    color: #542e59 !important;
+}
+
+.blank > .rune {
+    font-size: 195% !important;
+    padding: 0.65em !important;
+    color: #baadbb !important;
+}
+
+.play, .main-word, .coord, .time-left, .score-change, .cumulative, .tiles-remaining, .coord-label, .chat-area {
+    font-family: Arial, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+}
+
+.challenge {
+    color: salmon !important;
+}
+
+}
